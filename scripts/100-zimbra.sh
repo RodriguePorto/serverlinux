@@ -103,7 +103,7 @@ if [ "$USUARIO" == "0" ] && [ "$UBUNTU" == "20.04" ] && [ "$KERNEL" == "4.15" ]
 		echo -e "Kernel é >= 4.15, continuando com o script..."
 		sleep 5
 	else
-		echo -e "Usuário não é Root ($USUARIO) ou Distribuição não é >=18.04.x ($UBUNTU) ou Kernel não é >=4.15 ($KERNEL)"
+		echo -e "Usuário não é Root ($USUARIO) ou Distribuição não é >=20.04.x ($UBUNTU) ou Kernel não é >=4.15 ($KERNEL)"
 		echo -e "Caso você não tenha executado o script com o comando: sudo -i"
 		echo -e "Execute novamente o script para verificar o ambiente."
 		exit 1
@@ -137,7 +137,7 @@ echo -e "Início do script $0 em: `date +%d/%m/%Y-"("%H:%M")"`\n" &>> $LOG
 clear
 #
 echo
-echo -e "Instalação do Zimbra Collaboration Community no GNU/Linux Ubuntu Server 18.04.x\n"
+echo -e "Instalação do Zimbra Collaboration Community no GNU/Linux Ubuntu Server 20.04.x\n"
 echo -e "Após a instalação do Zimbra Admin Console acessar a URL: https://mail.`hostname -d | cut -d' ' -f1`:7071"
 echo -e "Após a instalação do Zimbra Webmail acessar a URL: https://mail.`hostname -d | cut -d' ' -f1`\n"
 echo -e "Aguarde, esse processo demora um pouco dependendo do seu Link de Internet...\n"
