@@ -27,7 +27,7 @@
 
 $ORIGIN pti.intra.
 $TTL 3600 ; 1 hour
-@		IN		SOA		ptispo01ws01.pti.intra. vaamonde.pti.intra. (
+@		IN		SOA		ws01.confianca.local. rodrigue.confianca.local. (
 				1 ; serial
 				604800 ; refresh (1 week)
 				86400 ; retry (1 day)
@@ -35,41 +35,41 @@ $TTL 3600 ; 1 hour
 				604800 ; minimum (1 week)
 				)
 ;
-@               IN 		NS		ptispo01ws01.pti.intra.
+@               IN 		NS		ws01.confianca.local.
 @               IN 		MX		10 mail
 @               IN		TXT		"v=spf1 a mx -all"
 ;
-pti.intra.      IN 		A 		172.16.1.20
-ptispo01ws01    IN 		A		172.16.1.20
-ptispo01fw01    IN 		A		172.16.1.254
-mail            IN 		A 		172.16.1.20
+confianca.local.      IN 		A 		172.16.6.8
+ws01    			  IN 		A		172.16.6.8
+ws01    			  IN 		A		172.16.6.1
+mail            	  IN 		A 		172.16.6.8
 ;
-cloud           IN		CNAME	ptispo01ws01
-ftp             IN		CNAME	ptispo01ws01
-grafana         IN		CNAME	ptispo01ws01
-glpi9           IN		CNAME	ptispo01ws01
-glpi10          IN		CNAME	ptispo01ws01
-helpdesk        IN		CNAME	ptispo01ws01
-imap4           IN		CNAME	ptispo01ws01
-imap            IN		CNAME	ptispo01ws01
-loganalyzer     IN		CNAME	ptispo01ws01
-log             IN		CNAME	ptispo01ws01
-mysql           IN		CNAME	ptispo01ws01
-netdata         IN		CNAME	ptispo01ws01
-next            IN		CNAME	ptispo01ws01
-nfs             IN		CNAME	ptispo01ws01
-ntp             IN		CNAME	ptispo01ws01
-own             IN		CNAME	ptispo01ws01
-pop3            IN		CNAME	ptispo01ws01
-portal          IN		CNAME	ptispo01ws01
-pxe             IN		CNAME	ptispo01ws01
-smtp            IN		CNAME	ptispo01ws01
-ssh             IN		CNAME	ptispo01ws01
-suporte         IN		CNAME	ptispo01ws01
-tftp            IN		CNAME	ptispo01ws01
-webdav          IN		CNAME	ptispo01ws01
-wpad            IN		CNAME	ptispo01ws01
-wp              IN		CNAME	ptispo01ws01
-www             IN		CNAME	ptispo01ws01
-zm              IN		CNAME	ptispo01ws01
+cloud           IN		CNAME	ws01
+ftp             IN		CNAME	ws01
+grafana         IN		CNAME	ws01
+glpi9           IN		CNAME	ws01
+glpi10          IN		CNAME	ws01
+helpdesk        IN		CNAME	ws01
+imap4           IN		CNAME	ws01
+imap            IN		CNAME	ws01
+loganalyzer     IN		CNAME	ws01
+log             IN		CNAME	ws01
+mysql           IN		CNAME	ws01
+netdata         IN		CNAME	ws01
+next            IN		CNAME	ws01
+nfs             IN		CNAME	ws01
+ntp             IN		CNAME	ws01
+own             IN		CNAME	ws01
+pop3            IN		CNAME	ws01
+portal          IN		CNAME	ws01
+pxe             IN		CNAME	ws01
+smtp            IN		CNAME	ws01
+ssh             IN		CNAME	ws01
+suporte         IN		CNAME	ws01
+tftp            IN		CNAME	ws01
+webdav          IN		CNAME	ws01
+wpad            IN		CNAME	ws01
+wp              IN		CNAME	ws01
+www             IN		CNAME	ws01
+zm              IN		CNAME	ws01
 

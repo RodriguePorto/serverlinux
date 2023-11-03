@@ -29,6 +29,7 @@
 # Permitindo a Rede 172.16.6.0/24 se autenticar remotamente no Servidor de OpenSSH
 # DAEMON   CLIENT     OPTION
 sshd: 172.16.6.0/24: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-ssh.log
+sshd: 10.2.2.0/24: spawn /bin/echo "$(date -u) | Serviço Remoto %d | Host Remoto %c | Porta Remota %r | Processo Local %p" >> /var/log/tcpwrappers-allow-ssh.log
 #
 # Permitindo a Rede 172.16.6.0/24 se autenticar remotamente no Servidor de MySQL
 # DAEMON   CLIENT     OPTION
